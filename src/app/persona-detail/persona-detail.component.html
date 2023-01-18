@@ -1,0 +1,22 @@
+<p>persona-detail works!</p>
+<div *ngIf="persona">
+    <h2>{{persona.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{persona.id}}</div>
+    <div>
+      <label for="persona-name">Persona name: </label>
+      <input id="persona-name" [(ngModel)]="persona.name" placeholder="name">
+
+      <label for="persona-surname">Persona surname: </label>
+      <input id="persona-surname" [(ngModel)]="persona.surname" placeholder="surname">
+
+      <label for="persona-phone">Persona phone: </label>
+      <input id="persona-phone" [(ngModel)]="persona.phone" placeholder="phone">
+
+      <label for="persona-email">Persona email: </label>
+      <input id="persona-email" [(ngModel)]="persona.email" placeholder="email">
+
+      
+
+    </div>
+  
+  </div>
