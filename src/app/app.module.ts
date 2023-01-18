@@ -4,13 +4,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PersonasComponent } from './personas/personas.component';
 import { FormsModule } from '@angular/forms';
-import { PersonaDetailComponent } from './persona-detail/persona-detail.component'; // <-- NgModel lives here
+import { PersonaDetailComponent } from './persona-detail/persona-detail.component';
+import { FormularioComponent } from './formulario/formulario.component';
+import { NavegacionComponent } from './navegacion/navegacion.component'; // <-- NgModel lives here
 
 @NgModule({
   declarations: [
     AppComponent,
     PersonasComponent,
-    PersonaDetailComponent
+    PersonaDetailComponent,
+    FormularioComponent,
+    NavegacionComponent
   ],
   imports: [
     BrowserModule,

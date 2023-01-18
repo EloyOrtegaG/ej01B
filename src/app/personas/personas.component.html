@@ -1,4 +1,3 @@
-<p>personas works!</p>
 <h2>{{persona.name}} Details</h2>
 <div><span>id: </span>{{persona.id}}</div>
 <div><span>surname: </span>{{persona.surname}}</div>
@@ -31,8 +30,13 @@
             <td>{{persona.phone}}</td>
             <td>{{persona.email}}</td>
             <td>
-                <a href="#">Editar</a>
-                <a href="#">Borrar</a>
+                <!-- <a href="#">Editar</a>
+                <a href="#">Borrar</a> -->
+                <!-- <a routerLink="/formulario/{{c.id}}">Editar</a>
+                <a routerLink="/listado" (click)="borrar(c.id)">Borrar</a> -->
+
+                <a routerLink="/formulario/">Editar</a>
+                <a routerLink="/personas/" >Borrar</a>
             </td>
         </tr>
     </tbody>
@@ -44,45 +48,9 @@
             <td></td>
             <td></td>
             <td>
-                <a href="#">Añadir</a>                    
+                <!-- <a href="#">Añadir</a>                     -->
+                <a routerLink="/formulario">Añadir</a>
             </td>
         </tr>
     </tfoot>
 </table>
-
-<!-- <app-persona-detail [persona]="selectedPersona"></app-persona-detail> -->
-<app-persona-detail></app-persona-detail>
-
-
-
-
-<form action="#" style="margin-top: 5em; display: none;">
-    <fieldset>
-        <legend>Cliente</legend>
-
-        <div>
-            <label for="id">Id</label>
-            <input type="number" readonly id="id">
-        </div>
-        <div>
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre">
-        </div>
-        <div>
-            <label for="apellidos">Apellidos</label>
-            <input type="text" id="apellidos">
-        </div>
-        <div>
-            <label for="telefono">Teléfono</label>
-            <input type="tel" id="telefono">
-        </div>
-        <div>
-            <label for="email">Email</label>
-            <input type="email" id="email">
-        </div>
-        <div>
-            <button>Aceptar</button>
-        </div>
-    </fieldset>
-</form>
-
